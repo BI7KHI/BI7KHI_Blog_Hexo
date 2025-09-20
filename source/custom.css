@@ -57,6 +57,13 @@
     font-size: 1.2em;
 }
 
+.icon-gallery:before {
+    content: "📷";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
 .icon-info-circle:before {
     content: "ℹ";
     font-style: normal;
