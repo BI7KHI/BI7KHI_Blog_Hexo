@@ -1,5 +1,5 @@
 ---
-title: 第一篇博客！
+title: Hello World!
 date: 2025-09-18 20:31:15
 tags: [第一篇博客,技术,hello world,web]
 categories: [技术]
