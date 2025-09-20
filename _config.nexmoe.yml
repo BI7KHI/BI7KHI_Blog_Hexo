@@ -1,0 +1,80 @@
+avatar: /images/avatar.png # 网站 Logo
+background: # 既是博客的背景，又是文章默认头图
+    path: /images/background_mainpage.png
+    width: 1280
+    height: 726
+favicon:
+  href: /images/avatar.png # 网站图标
+  type: image/png # 图标类型
+
+function: # 功能开关，可选值（true,false）
+  globalToc: true # 开启该功能会自动开启文章 TOC（文章目录） 功能
+  wordCount: true # 是否开启文章字数统计 (true, false)
+  copyCode: true # 是否允许复制代码块
+
+imageCDN: # 图片 CDN 功能
+  enable: false # 开启该功能  
+  origin: /../../images/ # 图片原始目录
+  to: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/ # 图片 CDN 域名
+
+# 自定义样式，启用后可在站点的source文件夹下新建custom.css自定义站点样式
+customStyles:
+  - custom.css
+  
+# 附加图标库 - 图标已在custom.css中定义
+# iconlib: /lib/iconfont/iconfont.css
+
+menu:
+    回到首页:
+        - /
+        - icon-home
+    文章归档:
+        - /archives/
+        - icon-container
+    关于:
+        - /about/
+        - icon-info-circle
+
+widgets:
+    - name: search
+      enable: true
+      options: 
+        search: 
+            type: local # 可选engine（用搜索引擎搜索）、swiftype、或local（本地搜索）
+            url: https://cn.bing.com/search?q=site:bi7khi.github.io # 搜索引擎地址
+    - name: social
+      enable: true
+      options: 
+        social:
+            GitHub:
+                - https://github.com/BI7KHI
+                - icon-github
+            邮箱:
+                - mailto:a298995@outlook.com
+                - icon-mail
+            Bilibili:
+                - https://space.bilibili.com/667586588?spm_id_from=333.1387.0.0
+                - icon-bilibili
+    - name: friends
+      enable: true
+      options:
+        friends:
+            Hongliu的小站:
+                - https://hongliu.icu/
+                - https://hongliu.icu/image/avator_1.jpg
+            SuOilfield's Blog:
+                - https://blog.suoilfield.cc/
+                - https://blog.suoilfield.cc/assets/images/profile.png
+            
+# 页脚信息
+footer:
+  since: 2025
+  author: BI7KHI
+  
+# 评论系统
+comment:
+  enable: true
+  
+# 统计
+analytics:
+  enable: true

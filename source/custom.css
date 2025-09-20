@@ -1,0 +1,275 @@
+/* 自定义样式 - 蓝青色调主题 */
+
+/* 修复Nexmoe主题NaN问题 */
+.nexmoe-post-cover[style*="NaN"] {
+    padding-top: 56.25% !important; /* 16:9 比例 */
+}
+
+/* 修复邮箱图标显示问题 */
+.icon-mail:before {
+    content: "✉";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: var(--primary-cyan);
+}
+
+/* 其他常用图标修复 */
+.icon-github:before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.icon-bilibili:before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906l-1.174 1.12zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.789 1.894v7.52c.02.764.283 1.395.789 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.789-1.893v-7.52c-.02-.765-.283-1.396-.789-1.894-.507-.497-1.134-.755-1.88-.773H5.333zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.icon-home:before {
+    content: "🏠";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.icon-container:before {
+    content: "📁";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.icon-info-circle:before {
+    content: "ℹ";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+/* 社交图标容器样式优化 */
+.nexmoe-social .icon-mail,
+.nexmoe-social .icon-github,
+.social-widget .icon-mail,
+.social-widget .icon-github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--gradient-blue);
+    color: white !important;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-cyan);
+}
+
+.nexmoe-social .icon-mail:hover,
+.nexmoe-social .icon-github:hover,
+.social-widget .icon-mail:hover,
+.social-widget .icon-github:hover {
+    background: var(--primary-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+}
+
+/* 优化代码块样式 */
+.highlight {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 优化链接样式 */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* 优化文章卡片样式 */
+.post-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* 图片并行显示样式 */
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    flex: 1;
+    max-width: calc(50% - 5px);
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+/* 友情链接样式 */
+.widget-friends {
+    margin-bottom: 20px;
+}
+
+.widget-friends .widget-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-cyan);
+    padding-bottom: 5px;
+}
+
+.friends-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friend-item {
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.friend-item:hover {
+    background-color: rgba(0, 188, 212, 0.1);
+    transform: translateX(5px);
+}
+
+.friend-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.friend-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    border: 2px solid var(--primary-cyan);
+    transition: border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.friend-item:hover .friend-avatar {
+    border-color: var(--accent-color);
+}
+
+.friend-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.friend-name {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95em;
+    line-height: 1.2;
+}
+
+.friend-link:hover .friend-name {
+    color: var(--primary-cyan);
+    text-decoration: none;
+}
+
+.friend-desc {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* h2标题动态小横线颜色修改 - 使用更强的选择器 */
+.post-content article h2:after,
+article.post h2:after,
+.article-content h2:after,
+article h2:after {
+  background: #50a6ed !important;
+  background-color: #50a6ed !important;
+}
+
+/* h2标题悬停效果 */
+.post-content article h2:hover:after,
+article.post h2:hover:after,
+.article-content h2:hover:after,
+article h2:hover:after {
+  background: #50a6ed !important;
+  background-color: #50a6ed !important;
+}
+
+/* 可选：修改h2标题下方的底线颜色 */
+article h2:before {
+  border-bottom-color: #f0f0f0 !important;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .image-row {
+        flex-direction: column;
+    }
+    
+    .image-row img {
+        max-width: 100%;
+    }
+    
+    .friend-avatar {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    
+    .friend-name {
+        font-size: 0.9em;
+    }
+}
