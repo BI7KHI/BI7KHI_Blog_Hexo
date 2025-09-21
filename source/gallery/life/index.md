@@ -8,12 +8,11 @@ layout: gallery
 
 记录生活中的点点滴滴，发现平凡中的美好瞬间。
 
+![黍泡泡-眼镜ver](/images/gallery/b4a360d3b7eb379358b89a2a22122a73.jpg)
 ## 📷 日常摄影
 
 生活中总有那么一些瞬间值得被记录下来，无论是一个美丽的日落，还是一个有趣的瞬间。
-<div class="photo-grid">
 
-</div>
 
 ---
 
