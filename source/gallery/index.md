@@ -20,12 +20,10 @@ layout: gallery
 <div class="card-content">
 <p class="card-description">记录旅途中的美好时光，包含云南之行的精彩瞬间</p>
 <div class="card-tags">
-<span class="tag">丽江古城</span>
-<span class="tag">玉龙雪山</span>
-<span class="tag">大理风光</span>
+<span class="tag">云南之行</span>
 </div>
 <div class="card-stats">
-<span class="photo-count">12+ 张照片</span>
+<span class="photo-count">4+ 张照片</span>
 </div>
 </div>
 </div>
@@ -39,8 +37,6 @@ layout: gallery
 <p class="card-description">捕捉日常生活中的美好瞬间</p>
 <div class="card-tags">
 <span class="tag">日常摄影</span>
-<span class="tag">航拍风光</span>
-<span class="tag">生活点滴</span>
 </div>
 <div class="card-stats">
 <span class="photo-count">8+ 张照片</span>
@@ -56,9 +52,7 @@ layout: gallery
 <div class="card-content">
 <p class="card-description">专注于自然风光和城市景观的摄影作品</p>
 <div class="card-tags">
-<span class="tag">山川河流</span>
-<span class="tag">日出日落</span>
-<span class="tag">城市风光</span>
+<span class="tag">天空之城</span>
 </div>
 <div class="card-stats">
 <span class="photo-count">6+ 张照片</span>
@@ -68,13 +62,14 @@ layout: gallery
 
 <div class="category-card tech-card">
 <div class="card-header">
-<span class="card-icon">💻</span>
+<span class="card-icon">✉</span>
 <h3><a href="/gallery/tech/">QSL收藏集</a></h3>
 </div>
 <div class="card-content">
 <p class="card-description">来自世界各地的QSL卡片</p>
 <div class="card-tags">
-<span class="tag">第一弹</span>
+<span class="tag">国内</span>
+<span class="tag">国际</span>
 </div>
 <div class="card-stats">
 <span class="photo-count">4+ 张照片</span>
@@ -468,14 +463,14 @@ function animateNumbers() {
         const duration = 2000; // 2秒动画
         const step = target / (duration / 16); // 60fps
         let current = 0;
-    
+  
         const timer = setInterval(() => {
             current += step;
             if (current >= target) {
                 current = target;
                 clearInterval(timer);
             }
-        
+  
             if (target === 30) {
                 number.textContent = Math.floor(current) + '+';
             } else {
@@ -491,7 +486,7 @@ function initScrollAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animated');
-            
+      
                 // 如果是统计模块，触发数字动画
                 if (entry.target.classList.contains('gallery-stats')) {
                     setTimeout(animateNumbers, 300);
@@ -519,11 +514,11 @@ function enhanceCardInteractions() {
             // 添加轻微的倾斜效果
             this.style.transform = 'translateY(-8px) scale(1.02) rotateY(5deg)';
         });
-    
+  
         card.addEventListener('mouseleave', function() {
             this.style.transform = '';
         });
-    
+  
         // 点击波纹效果
         card.addEventListener('click', function(e) {
             const ripple = document.createElement('div');
@@ -531,7 +526,7 @@ function enhanceCardInteractions() {
             const size = Math.max(rect.width, rect.height);
             const x = e.clientX - rect.left - size / 2;
             const y = e.clientY - rect.top - size / 2;
-        
+  
             ripple.style.cssText = `
                 position: absolute;
                 width: ${size}px;
@@ -545,11 +540,11 @@ function enhanceCardInteractions() {
                 pointer-events: none;
                 z-index: 1000;
             `;
-        
+  
             this.style.position = 'relative';
             this.style.overflow = 'hidden';
             this.appendChild(ripple);
-        
+  
             setTimeout(() => {
                 ripple.remove();
             }, 600);

@@ -4,7 +4,6 @@ date: 2025-01-27
 type: gallery
 layout: gallery
 ---
-
 # 📱 生活随拍
 
 记录生活中的点点滴滴，发现平凡中的美好瞬间。
@@ -12,23 +11,7 @@ layout: gallery
 ## 📷 日常摄影
 
 生活中总有那么一些瞬间值得被记录下来，无论是一个美丽的日落，还是一个有趣的瞬间。
-
 <div class="photo-grid">
-
-![生活随拍1](/images/gallery/IMG_20250804_105840.jpg)
-![生活随拍2](/images/gallery/Screenshot_20250904_003552648.jpg)
-
-</div>
-
-## 🌅 风光记录
-
-用镜头捕捉身边的美景，记录每一个值得纪念的时刻。
-
-<div class="photo-grid">
-
-![全景照片](/images/gallery/PANO_0001 Panoram1a@1.25x.jpg)
-![航拍作品1](/images/gallery/dji_fly_20250730_132900_0007_1753864650024_pano.jpg)
-![航拍作品2](/images/gallery/dji_fly_20250802_190946_0059_1754231249090_photo.jpg)
 
 </div>
 
@@ -40,27 +23,7 @@ layout: gallery
 </div>
 
 <style>
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 20px 0;
-}
 
-.photo-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.photo-grid img:hover {
-    transform: scale(1.03) translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
 
 .gallery-nav {
     display: flex;
@@ -91,7 +54,7 @@ layout: gallery
         flex-direction: column;
         gap: 10px;
     }
-    
+  
     .nav-btn {
         text-align: center;
     }

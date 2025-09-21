@@ -16,21 +16,29 @@ layout: gallery
 
 <div class="photo-grid">
 
-![丽江古城1](/images/QSL_image/丽江古城S1.png)
-![丽江古城2](/images/QSL_image/丽江古城S2.png)
-![丽江古城5](/images/QSL_image/丽江古城S5.png)
+![丽江古城1](/images/gallery/dji_fly_20250802_190946_0059_1754231249090_photo.jpg)
+
+丽江市区 狮头山和玉龙雪山
+
+![丽江古城2](/images/gallery/Screenshot_20250904_003552648.jpg)
+
+长焦看玉龙
 
 </div>
 
 ### 玉龙雪山
 雪山巍峨，云雾缭绕，大自然的鬼斧神工令人叹为观止。站在雪山脚下，感受着大自然的壮美与神秘。
 
-![玉龙雪山](/images/QSL_image/玉龙雪山S3.png)
+![蓝月湖](/images/gallery/dji_fly_20250730_132900_0007_1753864650024_pano.jpg)
+玉龙山下蓝月湖
 
 ### 大理风光
 苍山洱海，风花雪月，大理的美景如诗如画。这里的每一处风景都让人流连忘返。
 
-![大理风光](/images/QSL_image/大理S4.png)
+![大理风光](/images/gallery/IMG_20250804_105840.jpg)
+
+苍山洱海 自行车🚲
+
 
 ---
 
@@ -40,28 +48,7 @@ layout: gallery
 </div>
 
 <style>
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.photo-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.photo-grid img:hover {
-    transform: scale(1.03) translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-
+/* 导航按钮样式 */
 .gallery-nav {
     display: flex;
     justify-content: space-between;
@@ -86,6 +73,7 @@ layout: gallery
     box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
 }
 
+/* 响应式设计 */
 @media (max-width: 768px) {
     .gallery-nav {
         flex-direction: column;
@@ -95,5 +83,33 @@ layout: gallery
     .nav-btn {
         text-align: center;
     }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .photo-grid img,
+    img:not(.photo-grid img) {
+        max-height: 300px;
+        padding: 8px;
+    }
+}
+
+/* 图片加载动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo-grid img,
+img:not(.photo-grid img) {
+    animation: fadeIn 0.6s ease-out;
 }
 </style>
