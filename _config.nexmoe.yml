@@ -25,13 +25,13 @@ customStyles:
 # iconlib: /lib/iconfont/iconfont.css
 
 menu:
-    回到首页:
+    首页:
         - /
         - icon-home
     文章归档:
         - /archives/
         - icon-container
-    摄影图库:
+    图库:
         - /gallery/
         - icon-gallery
     关于:
