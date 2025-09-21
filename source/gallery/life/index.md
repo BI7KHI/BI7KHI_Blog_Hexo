@@ -19,7 +19,7 @@ layout: gallery
 
 <div class="gallery-nav">
 <a href="/gallery/" class="nav-btn">← 返回图库首页</a>
-<a href="/gallery/tech/" class="nav-btn">技术记录 →</a>
+<a href="/gallery/qsl/" class="nav-btn">QSL收藏集 →</a>
 </div>
 
 <style>

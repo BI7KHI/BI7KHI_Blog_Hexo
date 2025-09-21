@@ -23,7 +23,7 @@ layout: gallery
 <span class="tag">云南之行</span>
 </div>
 <div class="card-stats">
-<span class="photo-count">4+ 张照片</span>
+<span class="photo-count">5+ 张照片</span>
 </div>
 </div>
 </div>
@@ -39,7 +39,7 @@ layout: gallery
 <span class="tag">日常摄影</span>
 </div>
 <div class="card-stats">
-<span class="photo-count">8+ 张照片</span>
+<span class="photo-count">5+ 张照片</span>
 </div>
 </div>
 </div>
@@ -60,10 +60,10 @@ layout: gallery
 </div>
 </div>
 
-<div class="category-card tech-card">
+<div class="category-card qsl-card">
 <div class="card-header">
-<span class="card-icon">✉</span>
-<h3><a href="/gallery/tech/">QSL收藏集</a></h3>
+<span class="card-icon">📡</span>
+<h3><a href="/gallery/qsl/">QSL收藏集</a></h3>
 </div>
 <div class="card-content">
 <p class="card-description">来自世界各地的QSL卡片</p>
@@ -72,7 +72,7 @@ layout: gallery
 <span class="tag">国际</span>
 </div>
 <div class="card-stats">
-<span class="photo-count">4+ 张照片</span>
+<span class="photo-count">70+ 张照片</span>
 </div>
 </div>
 </div>
@@ -93,14 +93,14 @@ layout: gallery
 <div class="stat-item">
 <div class="stat-icon">📸</div>
 <div class="stat-info">
-<span class="stat-number" data-count="30">0</span>
+<span class="stat-number" data-count="90">0</span>
 <span class="stat-label">照片</span>
 </div>
 </div>
 <div class="stat-item">
 <div class="stat-icon">📅</div>
 <div class="stat-info">
-<span class="stat-number" data-count="2025">0</span>
+<span class="stat-number" data-count="2025">2025</span>
 <span class="stat-label">年份</span>
 </div>
 </div>
@@ -266,7 +266,7 @@ layout: gallery
     background: linear-gradient(90deg, #26a69a, #66bb6a);
 }
 
-.tech-card:hover::before {
+.qsl-card:hover::before {
     background: linear-gradient(90deg, #ab47bc, #7e57c2);
 }
 
@@ -486,7 +486,7 @@ function initScrollAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animated');
-      
+    
                 // 如果是统计模块，触发数字动画
                 if (entry.target.classList.contains('gallery-stats')) {
                     setTimeout(animateNumbers, 300);
