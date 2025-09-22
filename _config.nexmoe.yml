@@ -30,7 +30,7 @@ menu:
         - /
         - icon-home
     文章归档:
-        - /archives/
+        - /archive.html
         - icon-container
     图库:
         - /gallery/
@@ -59,6 +59,19 @@ widgets:
             Bilibili:
                 - https://space.bilibili.com/667586588?spm_id_from=333.1387.0.0
                 - icon-bilibili
+    - name: category
+      enable: true
+    - name: tagcloud
+      enable: true
+      options:
+          maxTagcloud: 15 # 标签云组件显示的标签数量，0 表示不限制
+    - name: archive #settings: widgetAchive
+      enable: true
+      options:
+          widgetAchive: #文章归档组件
+              show_count: true #是否展示数量
+    - name: recent_posts # 最近的推文
+      enable: false
     - name: friends
       enable: true
       options:

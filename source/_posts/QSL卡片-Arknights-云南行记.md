@@ -2,7 +2,7 @@
 title: QSL卡片-Arknights&云南行记
 date: 2025-09-19 12:52:27
 tags: [摄影,游戏,明日方舟,自行车,业余无线电,QSL]
-categories: [业余无线电HAM]
+categories: [业余无线电]
 cover: /images/QSL_image/正面1.png
 ---
 # Arknights明日方舟主题(共三种)

@@ -77,6 +77,23 @@ layout: gallery
 </div>
 </div>
 
+<div class="category-card tech-card">
+<div class="card-header">
+<span class="card-icon">🔧</span>
+<h3><a href="/gallery/tech/">技术折腾</a></h3>
+</div>
+<div class="card-content">
+<p class="card-description">记录技术探索和折腾过程中的精彩瞬间</p>
+<div class="card-tags">
+<span class="tag">硬件改造</span>
+<span class="tag">软件开发</span>
+</div>
+<div class="card-stats">
+<span class="photo-count">敬请期待</span>
+</div>
+</div>
+</div>
+
 </div>
 
 ## 📊 图库统计
@@ -86,7 +103,7 @@ layout: gallery
 <div class="stat-item">
 <div class="stat-icon">📁</div>
 <div class="stat-info">
-<span class="stat-number" data-count="4">0</span>
+<span class="stat-number" data-count="5">0</span>
 <span class="stat-label">分类</span>
 </div>
 </div>
@@ -268,6 +285,10 @@ layout: gallery
 
 .qsl-card:hover::before {
     background: linear-gradient(90deg, #ab47bc, #7e57c2);
+}
+
+.tech-card:hover::before {
+    background: linear-gradient(90deg, #ff9800, #f57c00);
 }
 
 /* 图库统计样式 */
