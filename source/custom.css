@@ -280,3 +280,54 @@ article h2:before {
         font-size: 0.9em;
     }
 }
+
+/* MathJax 数学公式样式 */
+.MathJax {
+    outline: 0;
+}
+
+.MathJax_Display {
+    text-align: center !important;
+    margin: 1em 0 !important;
+}
+
+.MathJax_SVG_Display {
+    text-align: center !important;
+    margin: 1em 0 !important;
+}
+
+/* 行内公式样式 */
+.MathJax_SVG {
+    display: inline !important;
+    vertical-align: middle !important;
+}
+
+/* 块级公式样式 */
+.MathJax_Display .MathJax_SVG {
+    display: block !important;
+    text-align: center !important;
+}
+
+/* 确保数学公式在暗色主题下可见 */
+.MathJax_SVG * {
+    color: inherit !important;
+}
+
+/* 数学公式容器样式 */
+.math {
+    text-align: center;
+    margin: 1.2em 0;
+}
+
+/* 行内数学公式 */
+.math.inline {
+    display: inline;
+    margin: 0;
+}
+
+/* 块级数学公式 */
+.math.display {
+    display: block;
+    text-align: center;
+    margin: 1.2em 0;
+}

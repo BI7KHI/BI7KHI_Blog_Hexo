@@ -11,6 +11,7 @@ function: # 功能开关，可选值（true,false）
   globalToc: true # 开启该功能会自动开启文章 TOC（文章目录） 功能
   wordCount: true # 是否开启文章字数统计 (true, false)
   copyCode: true # 是否允许复制代码块
+  math: true # 是否开启数学公式渲染
 
 imageCDN: # 图片 CDN 功能
   enable: false # 开启该功能  
@@ -84,3 +85,24 @@ comment:
 # 统计
 analytics:
   enable: true
+
+# 自定义头部内容
+slotHead: |
+  <!-- MathJax 数学公式渲染 -->
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>

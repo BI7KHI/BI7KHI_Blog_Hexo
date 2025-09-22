@@ -98,6 +98,19 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: nexmoe
 
+# Markdown-it configuration
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-mathjax3
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 ## Using GitHub Actions for deployment, no manual deploy config needed
