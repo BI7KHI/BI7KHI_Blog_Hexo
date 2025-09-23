@@ -86,10 +86,430 @@
     box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
 }
 
-/* 优化代码块样式 */
-.highlight {
-    border-radius: 8px;
-    overflow: hidden;
+/* ===== VSCode Dark+ 主题代码高亮样式 ===== */
+
+/* 代码块基础样式 - 使用更高优先级覆盖外部样式 */
+.highlight,
+figure.highlight,
+.hljs {
+    background: #1e1e1e !important;
+    border: 1px solid #3c3c3c !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin: 20px 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    position: relative !important;
+}
+
+.highlight pre,
+figure.highlight pre,
+.hljs {
+    background: #1e1e1e !important;
+    color: #d4d4d4 !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    padding: 16px !important;
+    margin: 0 !important;
+    overflow-x: auto !important;
+}
+
+.highlight code,
+figure.highlight code,
+.hljs code {
+    background: transparent !important;
+    color: #d4d4d4 !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+}
+
+/* VSCode Dark+ 基础样式 */
+.hljs {
+    background: #1e1e1e !important;
+    color: #d4d4d4 !important;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Hexo语法高亮样式 - VSCode Dark+主题 */
+/* 基础代码块样式 */
+figure.highlight {
+    background: #1e1e1e !important;
+    border-radius: 6px !important;
+    margin: 1em 0 !important;
+    overflow: auto !important;
+}
+
+figure.highlight table {
+    background: transparent !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+figure.highlight .gutter {
+    background: #252526 !important;
+    border-right: 1px solid #3e3e42 !important;
+    color: #858585 !important;
+    padding: 0.5em !important;
+}
+
+figure.highlight .code {
+    background: #1e1e1e !important;
+    padding: 0.5em !important;
+}
+
+/* 预处理器指令 - 紫色 */
+figure.highlight .meta,
+figure.highlight .meta .keyword {
+    color: #c586c0 !important;
+}
+
+/* 字符串 - 橙色 */
+figure.highlight .string {
+    color: #ce9178 !important;
+}
+
+/* 注释 - 绿色 */
+figure.highlight .comment {
+    color: #6a9955 !important;
+    font-style: italic !important;
+}
+
+/* 关键字 - 蓝色 */
+figure.highlight .keyword,
+figure.highlight .type {
+    color: #569cd6 !important;
+}
+
+/* 数字 - 浅绿色 */
+figure.highlight .number {
+    color: #b5cea8 !important;
+}
+
+/* 函数名 - 黄色 */
+figure.highlight .function .title,
+figure.highlight .title.function {
+    color: #dcdcaa !important;
+}
+
+/* 内置函数 - 黄色 */
+figure.highlight .built_in {
+    color: #dcdcaa !important;
+}
+
+/* 类型 - 青色 */
+figure.highlight .class .title,
+figure.highlight .title.class {
+    color: #4ec9b0 !important;
+}
+
+/* 变量和参数 - 浅蓝色 */
+figure.highlight .variable,
+figure.highlight .params {
+    color: #9cdcfe !important;
+}
+
+/* 操作符和标点 - 白色 */
+figure.highlight .operator,
+figure.highlight .punctuation {
+    color: #d4d4d4 !important;
+}
+
+/* 标签 - 蓝色 */
+figure.highlight .tag {
+    color: #569cd6 !important;
+}
+
+/* 属性 - 浅蓝色 */
+figure.highlight .attr,
+figure.highlight .attribute {
+    color: #9cdcfe !important;
+}
+
+/* 符号 - 白色 */
+figure.highlight .symbol,
+figure.highlight .bullet {
+    color: #d4d4d4 !important;
+}
+
+/* 正则表达式 - 红色 */
+figure.highlight .regexp {
+    color: #d16969 !important;
+}
+
+/* 删除和添加 */
+figure.highlight .deletion {
+    color: #ce9178 !important;
+}
+
+figure.highlight .addition {
+    color: #b5cea8 !important;
+}
+
+/* 强调样式 */
+figure.highlight .emphasis {
+    font-style: italic !important;
+}
+
+figure.highlight .strong {
+    font-weight: bold !important;
+}
+
+/* 确保所有span元素继承正确的颜色 */
+figure.highlight span {
+    background: transparent !important;
+}
+
+/* 亮色主题适配 */
+@media (prefers-color-scheme: light) {
+    .highlight {
+        background: #ffffff;
+        border-color: #e1e4e8;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hljs {
+        background: #ffffff !important;
+        color: #24292e !important;
+    }
+    
+    .highlight pre {
+        color: #24292e;
+    }
+    
+    /* 亮色主题下的关键字 */
+    .hljs-keyword,
+    .hljs-selector-tag,
+    .hljs-literal,
+    .hljs-section,
+    .hljs-link {
+        color: #0000ff !important;
+    }
+    
+    /* 亮色主题下的字符串 */
+    .hljs-string {
+        color: #a31515 !important;
+    }
+    
+    /* 亮色主题下的注释 */
+    .hljs-comment,
+    .hljs-quote {
+        color: #008000 !important;
+    }
+    
+    /* 亮色主题下的数字 */
+    .hljs-number {
+        color: #098658 !important;
+    }
+    
+    /* 亮色主题下的函数名 */
+    .hljs-function .hljs-title,
+    .hljs-title.function_,
+    .hljs-title.function {
+        color: #795e26 !important;
+    }
+    
+    /* 亮色主题下的类型 */
+    .hljs-type,
+    .hljs-class .hljs-title,
+    .hljs-title.class_,
+    .hljs-title.class {
+        color: #267f99 !important;
+    }
+    
+    /* 亮色主题下的预处理器 */
+    .hljs-meta,
+    .hljs-meta .hljs-keyword {
+        color: #af00db !important;
+    }
+    
+    /* 亮色主题下的变量 */
+    .hljs-variable,
+    .hljs-name,
+    .hljs-attr,
+    .hljs-attribute {
+        color: #001080 !important;
+    }
+    
+    /* 亮色主题下的操作符 */
+    .hljs-operator,
+    .hljs-punctuation {
+        color: #24292e !important;
+    }
+    
+    /* 亮色主题下的标签 */
+    .hljs-tag {
+        color: #800000 !important;
+    }
+    
+    /* 亮色主题下的内置函数 */
+    .hljs-built_in,
+    .hljs-builtin-name {
+        color: #795e26 !important;
+    }
+    
+    /* 亮色主题下的正则表达式 */
+    .hljs-regexp {
+        color: #811f3f !important;
+    }
+    
+    /* 亮色主题下的模板参数 */
+    .hljs-template-tag,
+    .hljs-template-variable {
+        color: #267f99 !important;
+    }
+    
+    /* 亮色主题下的命名空间 */
+     .hljs-namespace {
+         color: #267f99 !important;
+     }
+}
+
+/* VSCode特有的代码块增强样式 */
+/* 代码块标题栏 */
+.highlight::before {
+    content: attr(data-lang);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #cccccc;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 行号样式 */
+.highlight .hljs-ln-numbers {
+    color: #858585;
+    border-right: 1px solid #3c3c3c;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: right;
+    user-select: none;
+    min-width: 40px;
+}
+
+/* 代码行样式 */
+.highlight .hljs-ln-code {
+    padding-left: 10px;
+}
+
+/* 滚动条样式 - VSCode风格 */
+.highlight pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.highlight pre::-webkit-scrollbar-track {
+    background: #2d2d30;
+    border-radius: 4px;
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+    background: #464647;
+    border-radius: 4px;
+}
+
+.highlight pre::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5c;
+}
+
+/* 代码块悬停效果 */
+.highlight:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* 选中文本样式 */
+.highlight ::selection {
+    background: #264f78;
+    color: #ffffff;
+}
+
+.highlight ::-moz-selection {
+    background: #264f78;
+    color: #ffffff;
+}
+
+/* 代码块内链接样式 */
+.highlight a {
+    color: #4fc3f7;
+    text-decoration: underline;
+}
+
+.highlight a:hover {
+    color: #81d4fa;
+}
+
+/* 错误高亮 */
+.hljs-error {
+    color: #f44747 !important;
+    background: rgba(244, 71, 71, 0.1);
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+/* 警告高亮 */
+.hljs-warning {
+    color: #ffcc02 !important;
+    background: rgba(255, 204, 2, 0.1);
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+/* 信息高亮 */
+.hljs-info {
+    color: #75beff !important;
+    background: rgba(117, 190, 255, 0.1);
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+/* 亮色主题下的增强样式 */
+@media (prefers-color-scheme: light) {
+    .highlight::before {
+        background: rgba(0, 0, 0, 0.1);
+        color: #666666;
+    }
+    
+    .highlight .hljs-ln-numbers {
+        color: #237893;
+        border-right-color: #e1e4e8;
+    }
+    
+    .highlight pre::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    .highlight pre::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+    }
+    
+    .highlight pre::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+    }
+    
+    .highlight ::selection {
+        background: #add6ff;
+        color: #000000;
+    }
+    
+    .highlight ::-moz-selection {
+        background: #add6ff;
+        color: #000000;
+    }
+    
+    .highlight a {
+        color: #0366d6;
+    }
+    
+    .highlight a:hover {
+        color: #0256cc;
+    }
 }
 
 /* 优化链接样式 */
