@@ -18,6 +18,7 @@ layout: gallery
 
 生活中总有那么一些瞬间值得被记录下来，无论是一个美丽的日落，还是一个有趣的瞬间。
 
+![广工通道日落](/images/gallery/1fe955ddfabcbd20d5588b62e4370687.jpg)
 
 ---
 

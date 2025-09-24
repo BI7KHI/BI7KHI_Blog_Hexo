@@ -1,5 +1,5 @@
 ---
-title: 摄影图库
+title: 图库
 date: 2025-01-27
 type: gallery
 layout: gallery
@@ -94,34 +94,6 @@ layout: gallery
 </div>
 </div>
 
-</div>
-
-## 📊 图库统计
-
-<div class="gallery-stats">
-<div class="stats-container">
-<div class="stat-item">
-<div class="stat-icon">📁</div>
-<div class="stat-info">
-<span class="stat-number" data-count="5">0</span>
-<span class="stat-label">分类</span>
-</div>
-</div>
-<div class="stat-item">
-<div class="stat-icon">📸</div>
-<div class="stat-info">
-<span class="stat-number" data-count="90">0</span>
-<span class="stat-label">照片</span>
-</div>
-</div>
-<div class="stat-item">
-<div class="stat-icon">📅</div>
-<div class="stat-info">
-<span class="stat-number" data-count="2025">2025</span>
-<span class="stat-label">年份</span>
-</div>
-</div>
-</div>
 </div>
 
 ---
@@ -253,21 +225,6 @@ layout: gallery
 .tag:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
-}
-
-/* 卡片统计 */
-.card-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
-}
-
-.photo-count {
-    color: #00bcd4;
-    font-weight: 600;
-    font-size: 0.95em;
 }
 
 /* 特定卡片主题色 */
@@ -507,7 +464,7 @@ function initScrollAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animated');
-    
+  
                 // 如果是统计模块，触发数字动画
                 if (entry.target.classList.contains('gallery-stats')) {
                     setTimeout(animateNumbers, 300);

@@ -148,8 +148,8 @@ figure.highlight table {
 }
 
 figure.highlight .gutter {
-    background: #252526 !important;
-    border-right: 1px solid #3e3e42 !important;
+    background: transparent !important;
+    border-right: none !important;
     color: #858585 !important;
     padding: 0.5em !important;
 }
@@ -567,7 +567,7 @@ a:hover {
 
 .friends-list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 12px 0;
     margin: 0;
 }
 
@@ -575,12 +575,14 @@ a:hover {
     margin-bottom: 12px;
     padding: 8px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
 }
 
-.friend-item:hover {
-    background-color: rgba(0, 188, 212, 0.1);
-    transform: translateX(5px);
+/* 移除最下方容器的底部间距 */
+.friend-item:last-child {
+    margin-bottom: 0;
 }
 
 .friend-link {
@@ -588,6 +590,7 @@ a:hover {
     align-items: center;
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 
 .friend-link:hover {
@@ -602,12 +605,7 @@ a:hover {
     margin-right: 12px;
     object-fit: cover;
     border: 2px solid var(--primary-cyan);
-    transition: border-color 0.3s ease;
     flex-shrink: 0;
-}
-
-.friend-item:hover .friend-avatar {
-    border-color: var(--accent-color);
 }
 
 .friend-info {
@@ -626,11 +624,6 @@ a:hover {
     margin-bottom: 4px;
     font-size: 0.95em;
     line-height: 1.2;
-}
-
-.friend-link:hover .friend-name {
-    color: var(--primary-cyan);
-    text-decoration: none;
 }
 
 .friend-desc {
@@ -1124,7 +1117,7 @@ article h2:before {
     --color6: #1a98ff;
     --color7: #9090ff;
     --color-primary-bg: rgba(3, 155, 84, 0.15);
-    --color2-bg: rgba(169, 23, 23, 0.15);
+    --color2-bg: rgba(235, 172, 46, 0.176);
     --color3-bg: rgba(255,185,0,0.15);
     --color4-bg: rgba(51,213,122,0.15);
     --color5-bg: rgba(0,219,255,0.15);

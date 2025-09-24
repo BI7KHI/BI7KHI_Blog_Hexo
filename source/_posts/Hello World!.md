@@ -1,8 +1,8 @@
 ---
 title: Hello World!
 date: 2025-09-18 20:31:15
-tags: [第一篇博客,技术,hello world,web]
-categories: [技术]
+tags: [第一篇博客,hello world,web]
+categories: [网络运维]
 cover: /images/background_mainpage.png
 ---
 # 🎉 oi 这都被你发现了
