@@ -2,7 +2,9 @@
 
 /* 修复Nexmoe主题NaN问题 */
 .nexmoe-post-cover[style*="NaN"] {
-    padding-top: 56.25% !important; /* 16:9 比例 */
+    padding-top: 80% !important;
+    background-size: cover !important;
+    background-position: center center !important;
 }
 
 /* 修复邮箱图标显示问题 */
@@ -1153,7 +1155,6 @@ article h2:before {
 
 .nexmoe-social a i {
     line-height: 1 !important;
-    vertical-align: middle !important;
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -1180,4 +1181,19 @@ article h2:before {
     color: white !important;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(34, 217, 223, 0.3);
+}
+
+/* ===== 横屏显示优化 - 增加文章卡片高度 ===== */
+@media screen and (orientation: landscape) and (min-width: 768px) {
+    /* 增加文章卡片的最小高度 */
+    .nexmoe-post,
+    .post-card,
+    .nexmoe-item {
+        min-height: 420px !important;
+    }
+    
+    /* 增加文章封面图片的高度比例 */
+    .nexmoe-post-cover {
+        padding-top: 50% !important;
+    }
 }
