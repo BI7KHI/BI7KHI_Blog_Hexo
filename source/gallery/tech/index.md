@@ -4,21 +4,44 @@ date: 2025-01-27
 type: gallery
 layout: gallery
 ---
-
 # 🔧 技术折腾
 
 记录在技术探索和折腾过程中的精彩瞬间，包括硬件改造、软件开发、电子制作等各种技术项目的成果展示。
 
-## 📸 照片展示
+## 比赛寄录
 
-<div class="gallery-grid">
-<!-- 暂无图片，待后续添加 -->
-<div class="no-photos">
-<div class="no-photos-icon">📷</div>
-<p>暂无照片，敬请期待...</p>
-</div>
-</div>
+![数模](/images/gallery/数模.jpg)
 
+BG7KMT && BG7KMU && BI7KHI 2025数模南亭烧烤
+
+---
+
+### 🔧宿舍外的折腾空间
+
+![合泰杯](/images/gallery/合泰杯.jpg)
+
+合泰杯 2025 
+BG8LMT && BI7KHI
+
+---
+![大创项目](/images/gallery/大创项目.jpg)\
+
+BG7KMT && BG7KMU && BI7KHI
+声控无人机项目
+
+---
+![DP天线](/images/gallery/DP天线.jpg)
+
+DP天线制作
+BI7MCC(广东省无线电协会业余无线电分会副秘书长)前来视察
+BI7MCC && BA7NLP
+
+---
+![夜深人静之时](/images/gallery/夜深人静之时.jpg)
+
+夜深人静之时
+
+---
 <style>
 /* 技术折腾图库样式 */
 .gallery-grid {
@@ -26,27 +49,6 @@ layout: gallery
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin: 30px 0;
-}
-
-.no-photos {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 15px;
-    border: 2px dashed #dee2e6;
-}
-
-.no-photos-icon {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    opacity: 0.6;
-}
-
-.no-photos p {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin: 0;
 }
 
 .photo-item {
