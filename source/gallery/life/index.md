@@ -12,6 +12,10 @@ layout: gallery
 
 黍泡泡-眼镜ver
 
+![山山兔](/images/gallery/山山兔.jpg)
+
+殿下和阿米娅兔兔
+
 ---
 
 ## 📷 日常摄影
