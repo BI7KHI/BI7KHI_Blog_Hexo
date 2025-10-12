@@ -61,155 +61,80 @@
     font-size: 1.2em;
 }
 
-/* 社交图标容器样式优化 */
-.nexmoe-social .icon-mail,
-.nexmoe-social .icon-github,
-.social-widget .icon-mail,
-.social-widget .icon-github {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    background: var(--gradient-blue);
-    color: white !important;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primary-cyan);
-}
+/* 恢复默认社交图标样式 */
 
-.nexmoe-social .icon-mail:hover,
-.nexmoe-social .icon-github:hover,
-.social-widget .icon-mail:hover,
-.social-widget .icon-github:hover {
-    background: var(--primary-cyan);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
-}
 
-/* ===== VSCode Dark+ 主题代码高亮样式 ===== */
-
-/* 代码块基础样式 - 使用更高优先级覆盖外部样式 */
-.highlight,
-figure.highlight,
-.hljs {
-    background: #1e1e1e !important;
-    border: 1px solid #3c3c3c !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    margin: 20px 0 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    position: relative !important;
-}
-
-.highlight pre,
-figure.highlight pre,
-.hljs {
-    background: #1e1e1e !important;
-    color: #d4d4d4 !important;
-    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    padding: 16px !important;
-    margin: 0 !important;
-    overflow-x: auto !important;
-}
-
-.highlight code,
-figure.highlight code,
-.hljs code {
-    background: transparent !important;
-    color: #d4d4d4 !important;
-    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
-    font-size: 14px !important;
-    padding: 0 !important;
-}
-
-/* VSCode Dark+ 基础样式 */
-.hljs {
-    background: #1e1e1e !important;
-    color: #d4d4d4 !important;
-    display: block;
-    overflow-x: auto;
-}
-
-/* Hexo语法高亮样式 - VSCode Dark+主题 */
-/* 基础代码块样式 */
+/* 代码高亮样式 - 深色主题 */
+/* 代码块基础样式 */
 figure.highlight {
-    background: #1e1e1e !important;
-    border-radius: 6px !important;
-    margin: 1em 0 !important;
-    overflow: auto !important;
+  background: #1e1e1e;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px;
+  overflow: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border: 1px solid #333;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
+/* 代码行号和代码内容 */
 figure.highlight table {
-    background: transparent !important;
-    margin: 0 !important;
-    border: none !important;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-spacing: 0;
 }
 
 figure.highlight .gutter {
-    background: transparent !important;
-    border-right: none !important;
-    color: #858585 !important;
-    padding: 0.5em !important;
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  text-align: right;
+  color: #858585;
+  user-select: none;
+  border-right: 1px solid #3c3c3c;
 }
 
 figure.highlight .code {
-    background: #1e1e1e !important;
-    padding: 0.5em !important;
+  padding-left: 10px;
+  width: 99%;
 }
 
-/* 预处理器指令 - 紫色 */
-figure.highlight .meta,
-figure.highlight .meta .keyword {
-    color: #c586c0 !important;
-}
+/* 代码语法高亮 - 适合深色背景 */
+figure.highlight .comment { color: #6A9955; font-style: italic; }
+figure.highlight .keyword { color: #569CD6; }
+figure.highlight .string { color: #CE9178; }
+figure.highlight .function .title { color: #DCDCAA; }
+figure.highlight .tag { color: #569CD6; }
+figure.highlight .number { color: #B5CEA8; }
+figure.highlight .attribute { color: #9CDCFE; }
+figure.highlight .class .title { color: #4EC9B0; }
+figure.highlight .variable { color: #9CDCFE; }
+figure.highlight .params { color: #9CDCFE; }
+figure.highlight .built_in { color: #DCDCAA; }
+figure.highlight .selector-id { color: #D7BA7D; }
+figure.highlight .selector-class { color: #D7BA7D; }
+figure.highlight .selector-attr { color: #9CDCFE; }
+figure.highlight .selector-pseudo { color: #D7BA7D; }
+figure.highlight .doctag { color: #569CD6; }
+figure.highlight .meta { color: #9CDCFE; }
+figure.highlight .section { color: #DCDCAA; }
+figure.highlight .type { color: #569CD6; }
+figure.highlight .title.class { color: #4EC9B0; }
+figure.highlight .title.function { color: #DCDCAA; }
+figure.highlight .title.section { color: #DCDCAA; }
 
-/* 字符串 - 橙色 */
-figure.highlight .string {
-    color: #ce9178 !important;
-}
-
-/* 注释 - 绿色 */
-figure.highlight .comment {
-    color: #6a9955 !important;
-    font-style: italic !important;
-}
-
-/* 关键字 - 蓝色 */
-figure.highlight .keyword,
-figure.highlight .type {
-    color: #569cd6 !important;
-}
-
-/* 数字 - 浅绿色 */
-figure.highlight .number {
-    color: #b5cea8 !important;
-}
-
-/* 函数名 - 黄色 */
-figure.highlight .function .title,
-figure.highlight .title.function {
-    color: #dcdcaa !important;
-}
-
-/* 内置函数 - 黄色 */
-figure.highlight .built_in {
-    color: #dcdcaa !important;
-}
-
-/* 类型 - 青色 */
-figure.highlight .class .title,
-figure.highlight .title.class {
-    color: #4ec9b0 !important;
-}
-
-/* 变量和参数 - 浅蓝色 */
-figure.highlight .variable,
-figure.highlight .params {
-    color: #9cdcfe !important;
+/* 行内代码样式 */
+code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 85%;
+  margin: 0;
+  padding: 0.2em 0.4em;
 }
 
 /* 操作符和标点 - 白色 */
@@ -1128,60 +1053,7 @@ article h2:before {
     --color-shadow: rgba(161, 177, 204, 0.4);
 }
 
-/* 友情链接优化样式 */
-.nexmoe-social {
-    padding: 16px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 8px !important;
-}
-
-.nexmoe-social a {
-    color: var(--color-primary) !important;
-    background-color: var(--color-primary-bg) !important;
-    transition: all 0.3s ease;
-    width: 44px !important;
-    height: 44px !important;
-    line-height: 44px !important;
-    margin: 0 !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-decoration: none !important;
-    font-size: 18px !important;
-}
-
-.nexmoe-social a i {
-    line-height: 1 !important;
-    display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* 针对特定图标的微调 */
-.nexmoe-social a .icon-github,
-.nexmoe-social a .icon-email {
-    transform: translateY(1px) !important;
-}
-
-/* 确保所有图标都使用相同的基线 */
-.nexmoe-social a i,
-.nexmoe-social a [class*="icon-"] {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.nexmoe-social a:hover {
-    background-color: var(--color-primary) !important;
-    color: white !important;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(34, 217, 223, 0.3);
-}
+/* 恢复默认友情链接样式 */
 
 /* ===== 横屏显示优化 - 增加文章卡片高度 ===== */
 @media screen and (orientation: landscape) and (min-width: 768px) {
