@@ -17,10 +17,16 @@ cover: https://ts2.tc.mm.bing.net/th/id/OIP-C.POT_UqJFZBZWYwoWQoS6mwHaEK?cb=12&r
 - 推送或拉取代码时出现超时或错误
 
 具体表现为
-···
+
+```powershell
 Git: fatal: unable to access'https:/aithub.com/BI7KHIHAM operationTechnicalverification,git/: Failed to connect togithub.com port 443 after 132917 ms: couldn't connect to server
-···
+```
+
 诸如此类Github等远程仓库连接问题
+
+```
+
+```
 
 ## 原因分析
 
@@ -33,14 +39,14 @@ Git: fatal: unable to access'https:/aithub.com/BI7KHIHAM operationTechnicalverif
 
 使用如下两行代码配置Git全局代理，将地址和端口替换为实际的代理地址（通常为127.0.0.1）和端口（例如7890，以实际为准）。
 
-```
+```bash
 git config --global http.proxy http://地址:端口
 git config --global https.proxy http://地址:端口
 ```
 
 如果代理为SOCKS5协议，需要将http.proxy和https.proxy配置为socks5://地址:端口。
 
-```
+```powershell
 git config --global http.proxy socks5://地址:端口
 git config --global https.proxy socks5://地址:端口
 ```
@@ -48,7 +54,7 @@ git config --global https.proxy socks5://地址:端口
 检查配置是否生效
 使用如下命令检查Git全局代理配置是否生效：
 
-```
+```powershell
 git config --global --get http.proxy
 git config --global --get https.proxy
 ```
@@ -79,10 +85,12 @@ git config --global --get https.proxy
 ![netstat](/images/Git/netstat.jpg)
 结果找到了疑似为Clash Verge的进程，端口实际上为7897。
 后面再次执行下面指令
-```
+
+```powershell
 git config --global http.proxy http://127.0.0.1:7897
 git config --global https.proxy http://127.0.0.1:7897
 ```
+
 配置完成后仓库可以正常clone和push/pull操作。
 后面正式找到了正确的Clash Verge的端口配置
 ![Clash Verge配置](/images/Git/cv.png)

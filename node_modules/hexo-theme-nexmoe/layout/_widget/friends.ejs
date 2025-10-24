@@ -1,0 +1,18 @@
+<div class="nexmoe-widget-wrap widget-friends">
+	<h3 class="nexmoe-widget-title widget-title">友情链接</h3>
+	<div class="nexmoe-widget">
+		<ul class="friends-list">
+			<% for (name in options.friends) { %>
+			<li class="friend-item">
+				<a href="<%- url_for(options.friends[name][0]) -%>" target="_blank" class="friend-link">
+					<img src="<%- url_for(options.friends[name][1]) -%>" alt="<%= name %>" class="friend-avatar">
+					<div class="friend-info">
+						<span class="friend-name"><%= name %></span>
+						<div class="friend-desc"><%= options.friends[name][2] %></div>
+					</div>
+				</a>
+			</li>
+			<% } %>
+		</ul>
+	</div>
+</div>
