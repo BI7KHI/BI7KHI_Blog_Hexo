@@ -43,6 +43,6 @@ npm install
 
 更多详情请参考 Hexo 官方文档：https://hexo.io/docs/
 
-## 社交媒体icon路径
+## icon路径
 
 node_modules\hexo-theme-nexmoe\source\lib\iconfont\iconfont.css

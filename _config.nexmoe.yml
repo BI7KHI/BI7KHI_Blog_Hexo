@@ -70,6 +70,11 @@ widgets:
                 - icon-bilibili
                 - rgb(231, 84, 128) # Pink
                 - rgba(231, 84, 128, .1)
+            QQ:
+                - https://wpa.qq.com/msgrd?v=3&uin=298995&site=qq&menu=yes
+                - icon-QQ
+                - rgb(0, 119, 237) # Blue
+                - rgba(0, 119, 237, .1)
     - name: category
       enable: true
     - name: tagcloud
