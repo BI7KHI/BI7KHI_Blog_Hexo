@@ -78,4 +78,11 @@ layout: "friends"
             <p>yuanshen.dev</p>
         </a>
     </div>
+    <div class="friend-card">
+        <a href="https://kyunana097.github.io/" target="_blank">
+            <img src="https://kyunana097.github.io/images/avatar.jpg" alt="Kyunana的栈">
+            <h3>Kyunana的栈</h3>
+            <p>kyunana097.github.io</p> 
+        </a>
+    </div>
 </div>

@@ -71,7 +71,7 @@ widgets:
                 - rgb(231, 84, 128) # Pink
                 - rgba(231, 84, 128, .1)
             QQ:
-                - https://wpa.qq.com/msgrd?v=3&uin=298995&site=qq&menu=yes
+                - https://qm.qq.com/q/d1enRNMHw4
                 - icon-QQ
                 - rgb(0, 119, 237) # Blue
                 - rgba(0, 119, 237, .1)
@@ -108,6 +108,10 @@ widgets:
                 - https://yuanshen.dev/
                 - https://ts4.tc.mm.bing.net/th/id/OIP-C.uXs0b0qPzfy2kKFCwiPHswAAAA?w=108&h=108&c=1&bgcl=1d7f01&r=0&o=7&dpr=1.7&pid=ImgRC&rm=3
                 - yuanshen.dev
+            Kyunana的栈:
+                - https://https://kyunana097.github.io//
+                - https://kyunana097.github.io/images/avatar.jpg
+                - kyunana097.github.io
             
 # 页脚信息
 footer:
