@@ -79,10 +79,10 @@ layout: "friends"
         </a>
     </div>
     <div class="friend-card">
-        <a href="https://kyunana097.github.io/" target="_blank">
-            <img src="https://kyunana097.github.io/images/avatar.jpg" alt="Kyunana的栈">
+        <a href="https://www.kyunana.art/" target="_blank">
+            <img src="https://www.kyunana.art/images/avatar.jpg" alt="Kyunana的栈">
             <h3>Kyunana的栈</h3>
-            <p>kyunana097.github.io</p> 
+            <p>kyunana097.art</p>
         </a>
     </div>
 </div>
