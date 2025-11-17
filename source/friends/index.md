@@ -85,4 +85,32 @@ layout: "friends"
             <p>kyunana097.art</p>
         </a>
     </div>
+    <div class="friend-card">
+        <a href="https://github.com/FFFuria/FFFuria.github.io" target="_blank">
+            <img src="https://fffuria.github.io/faviccon.PNG" alt="昏径-BG7KMU">
+            <h3>BG7KMU的昏径</h3>
+            <p>fffuria.github.io</p>
+        </a>
+    </div>
+    <div class="friend-card">
+        <a href="https://rayelink001.github.io/" target="_blank">
+            <img src="https://rayelink001.github.io/img/fufu.jpg" alt="林零一 00000000000001">
+            <h3>林零一 00000000000001</h3>
+            <p>rayelink001.github.io</p>
+        </a>
+    </div>
+    <div class="friend-card">
+        <a href="https://charsiu-applepie.github.io/" target="_blank">
+            <img src="https://avatars.githubusercontent.com/u/235512968?v=4" alt="自助茶水间">
+            <h3>自助茶水间-开水</h3>
+            <p>charsiu-applepie.github.io</p>
+        </a>
+    </div>
+    <div class="friend-card">
+        <a href="https://varlin-iscience.github.io/" target="_blank">
+            <img src="https://avatars.githubusercontent.com/u/242169870?v=4" alt="有机磷的小站">
+            <h3>有机磷的小站</h3>
+            <p>varlin-iscience.github.io</p>
+        </a>
+    </div>
 </div>
