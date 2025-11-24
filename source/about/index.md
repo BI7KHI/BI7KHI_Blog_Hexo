@@ -36,19 +36,70 @@ B类火腿一枚，业余电台呼号BI7KHI，QRZ页面[QRZ-BI7KHI](https://www.
 
 ~~（学这么多有什么用）~~
 
+<!-- markdownlint-disable MD033 -->
+<style>
+.stats-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:14px 0;}
+.stats-grid img{flex:1 1 360px;max-width:480px;width:100%;}
+.badge-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:10px 0;}
+.project-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:12px 0;}
+.project-grid a{text-decoration:none;}
+@media (max-width:600px){.badge-row img{height:32px}}
+</style>
+<!-- markdownlint-enable MD033 -->
+
+<!-- 图标与统计优化布局开始 -->
+
+## 📊 Github Statue | GitHub 状态
+
+<div class="stats-grid">
+  <img src="https://github-readme-stats.vercel.app/api?username=BI7KHI&show_icons=true&theme=dark&hide=issues&count_private=true&hide_border=true" alt="GitHub 统计" loading="lazy">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BI7KHI&layout=compact&theme=tokyonight&hide_border=true" alt="主要语言占比" loading="lazy">
+</div>
+
+## 🛠️ Working Environment | 工作环境
+
+<div class="badge-row">
+  <img src="https://img.shields.io/badge/CLion-000000.svg?logo=clion&logoColor=ffffff&style=for-the-badge" alt="CLion" loading="lazy">
+  <img src="https://img.shields.io/badge/WebStorm-000000.svg?logo=webstorm&logoColor=ffffff&style=for-the-badge" alt="WebStorm" loading="lazy">
+  <img src="https://img.shields.io/badge/VSCode-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" alt="VSCode" loading="lazy">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white&style=for-the-badge" alt="Ubuntu" loading="lazy">
+  <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white&style=for-the-badge" alt="Arch Linux" loading="lazy">
+</div>
+
+## 🌍 Language I Used | 使用语言
+
+<div class="badge-row">
+  <img src="https://img.shields.io/badge/中文-zh_CN-informational?logo=china&logoColor=red&style=for-the-badge" alt="中文" loading="lazy">
+  <img src="https://img.shields.io/badge/English-en-green?logo=unitedkingdom&logoColor=blue&style=for-the-badge" alt="English" loading="lazy">
+</div>
+
+## 🌟 Featured Projects | 有趣的项目
+
+<div class="project-grid">
+  <a href="https://github.com/BI7KHI/HAM_OperationTechnicalVerification" target="_blank" aria-label="HAM 题库与模拟程序">
+    <img src="https://img.shields.io/badge/HAM_OperationTechnicalVerification-题库&模拟程序-ff6b6b?style=for-the-badge&logo=github" alt="HAM 题库" loading="lazy">
+  </a>
+  <a href="https://github.com/BI7KHI/INA226-PowerMeasurement-Arduino" target="_blank" aria-label="INA226 功率测量">
+    <img src="https://img.shields.io/badge/INA226-功率测量-4ecdc4?style=for-the-badge&logo=arduino" alt="INA226 项目" loading="lazy">
+  </a>
+  <a href="https://github.com/BI7KHI/CUMCM2025-C" target="_blank" aria-label="数学建模">
+    <img src="https://img.shields.io/badge/CUMCM2025-C-ffd166?style=for-the-badge&logo=mathworks" alt="数学建模" loading="lazy">
+  </a>
+</div>
+
 ### 博客信息
 
-- **建站时间**: 2025年9月
-- **博客框架**: Hexo
-- **主题**: Nexmoe
-- **部署平台**: GitHub Pages
+* **建站时间**: 2025年9月
+* **博客框架**: Hexo
+* **主题**: Nexmoe
+* **部署平台**: GitHub Pages
 
 ### 联系方式
 
 如果你有任何问题或想要交流，欢迎通过以下方式联系我：
 
-- **GitHub**: [BI7KHI](https://github.com/BI7KHI)
-- **Email**: a298995@outlook.com
+* **GitHub**: [BI7KHI](https://github.com/BI7KHI)
+* **Email**: [a298995@outlook.com](mailto:a298995@outlook.com)
 
 ### 致谢
 
@@ -56,4 +107,3 @@ B类火腿一枚，业余电台呼号BI7KHI，QRZ页面[QRZ-BI7KHI](https://www.
 
 ---
 
-*最后更新时间: 2025年9月18日*
