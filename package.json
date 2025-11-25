@@ -28,5 +28,8 @@
     "hexo-theme-nexmoe": "^4.2.2",
     "hexo-wordcount": "^6.0.1",
     "markdown-it-mathjax3": "^4.3.2"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.8.31"
   }
 }
