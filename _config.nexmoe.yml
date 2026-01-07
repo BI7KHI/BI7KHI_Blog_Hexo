@@ -75,6 +75,26 @@ widgets:
                 - icon-QQ
                 - rgb(0, 119, 237) # Blue
                 - rgba(0, 119, 237, .1)
+            X:
+                - https://x.com/XYUZ321
+                - icon-twitter
+                - rgb(29, 155, 240) # Light Blue
+                - rgba(29, 155, 240, .1)
+            Discord:
+                - https://discord.gg/xuanyu0569
+                - icon-discord
+                - rgb(88, 101, 242) # Indigo
+                - rgba(88, 101, 242, .1)
+            Telegram:
+                - https://t.me/Xuanna024
+                - icon-telegram
+                - rgb(0, 136, 204) # Blue
+                - rgba(0, 136, 204, .1)
+            Steam:
+                - https://steamcommunity.com/id/BI7KHI/
+                - icon-steam
+                - rgb(0, 0, 0) # Black
+                - rgba(0, 0, 0, .1)
     - name: category
       enable: true
     - name: tagcloud

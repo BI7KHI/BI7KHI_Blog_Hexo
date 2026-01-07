@@ -60,6 +60,13 @@
     font-size: 1.2em;
 }
 
+.icon-discord:before {
+    content: "📣";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
 /* 侧边友情链接样式 */
 .widget-friends {
     margin-bottom: 20px;
