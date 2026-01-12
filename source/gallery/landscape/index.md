@@ -42,6 +42,11 @@ layout: gallery
 
 >海鸥岛日出2025/11/17 广工HAM小分队 BI7KHI BG7LOY BG7KMT wya
 
+## 工大创谷风光 SHOT ON DJI MAVIC 4 PRO
+![工大创谷](/images/gallery/GDUT_img/1.jpg)
+![工大创谷](/images/gallery/GDUT_img/2.jpg)
+![工大创谷](/images/gallery/GDUT_img/3.jpg)
+
 ---
 
 <div class="gallery-nav">

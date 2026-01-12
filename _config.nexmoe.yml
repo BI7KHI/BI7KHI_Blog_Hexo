@@ -150,6 +150,8 @@ analytics:
 slotHead: |
   <!-- highlight.js CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <!-- APlayer 音乐播放器 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
   <!-- MathJax 数学公式渲染 -->
   <script>
   window.MathJax = {
@@ -168,3 +170,35 @@ slotHead: |
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+  <!-- APlayer 音乐播放器 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+
+# 页脚内容 - 可以在这里添加全局音乐播放器（已注释）
+# slotFooter: |
+#   <!-- 全局音乐播放器 -->
+#   <div id="aplayer" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;"></div>
+#   <script>
+#     document.addEventListener('DOMContentLoaded', function() {
+#       const ap = new APlayer({
+#         container: document.getElementById('aplayer'),
+#         fixed: true,
+#         autoplay: false,
+#         theme: '#22d9df',
+#         loop: 'all',
+#         order: 'random',
+#         preload: 'auto',
+#         volume: 0.5,
+#         mutex: true,
+#         lrcType: 1,
+#         audio: [
+#           {
+#             name: '示例歌曲1',
+#             artist: '示例歌手',
+#             url: '/music/song1.mp3', // 请替换为实际的音乐文件路径
+#             cover: '/images/music-cover1.jpg', // 请替换为实际的封面图片路径
+#             lrc: '[00:00.00]示例歌词\n[00:05.00]请替换为实际歌词'
+#           },
+#         ]
+#       });
+#     });
+#   </script>
