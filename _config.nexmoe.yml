@@ -141,6 +141,11 @@ footer:
 # 评论系统
 comment:
   enable: true
+  type: twikoo  # 使用 Twikoo 评论系统
+  twikoo:
+    envId: https://bi7khiblog.netlify.app/.netlify/functions/twikoo  # 请替换为您的 Twikoo 环境 ID
+    region: ap-shanghai  # 环境地域，可选值：ap-beijing, ap-guangzhou, ap-shanghai 等
+    path: window.location.pathname  # 用于区分不同文章的路径
   
 # 统计
 analytics:
@@ -152,6 +157,8 @@ slotHead: |
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
   <!-- APlayer 音乐播放器 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <!-- Twikoo 评论系统 -->
+  <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
   <!-- MathJax 数学公式渲染 -->
   <script>
   window.MathJax = {
@@ -202,3 +209,59 @@ slotHead: |
 #       });
 #     });
 #   </script>
+
+# Twikoo 评论系统初始化
+slotFooter: |
+  <!-- Twikoo 评论系统初始化 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 只在文章页面添加评论区，避免在首页等非文章页面显示
+      if (window.location.pathname.match(/\/\d{4}\/\d{2}\/\d{2}\//) || 
+          document.querySelector('article.post') || 
+          document.body.classList.contains('post-template')) {
+        
+        // 检查是否已存在评论容器，如果没有则自动创建
+        let talkContainer = document.getElementById('tcomment');
+        
+        if (!talkContainer) {
+          const article = document.querySelector('article') || 
+                         document.querySelector('.nexmoe-post') || 
+                         document.querySelector('.post-content') ||
+                         document.querySelector('main');
+          
+          if (article) {
+            // 创建评论区标题
+            const commentTitle = document.createElement('div');
+            commentTitle.className = 'comment-title';
+            commentTitle.innerHTML = '💬 评论区';
+            
+            // 创建评论容器
+            talkContainer = document.createElement('div');
+            talkContainer.id = 'tcomment';
+            
+            // 插入到文章内容后面
+            article.insertAdjacentElement('afterend', commentTitle);
+            commentTitle.insertAdjacentElement('afterend', talkContainer);
+          }
+        }
+        
+        // 初始化 Twikoo（使用您的实际环境 ID）
+        if (talkContainer && typeof twikoo !== 'undefined') {
+          twikoo.init({
+            envId: 'https://bi7khiblog.netlify.app/.netlify/functions/twikoo',
+            el: '#tcomment',
+            path: window.location.pathname,
+            lang: 'zh-CN'
+          }).then(() => {
+            console.log('✅ Twikoo 评论系统初始化成功');
+          }).catch(err => {
+            console.error('❌ Twikoo 初始化失败:', err);
+            // 如果初始化失败，显示错误信息
+            if (talkContainer) {
+              talkContainer.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">评论系统暂时无法加载，请稍后再试。</p>';
+            }
+          });
+        }
+      }
+    });
+  </script>

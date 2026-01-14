@@ -4,6 +4,25 @@ date: 2025-01-27
 type: friends
 layout: "friends"
 ---
+
+<div id="article-player-1" class="article-music-player"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const ap = new APlayer({
+    container: document.getElementById('article-player-1'),
+    autoplay: true,
+    volume: 0.2,
+    theme: '#22d9df',
+    audio: [{
+      name: '夏が終わる',
+      artist: 'ナナツカゼ',
+      url: '/music/夏が終わる - ナナツカゼ.mp3',
+      cover: '/music/夏が終わる - ナナツカゼ.png'
+    }]
+  });
+});
+</script>
+
 <style>
     .friend-card-container {
         display: grid;
