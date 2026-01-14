@@ -226,78 +226,7 @@
     }
 }
 
-/* Twikoo 评论系统样式优化 */
+/* Twikoo 评论系统默认样式 - 最小化自定义 */
 #tcomment {
     margin: 30px 0;
-    background: var(--color-card);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Twikoo 主题色彩适配 Nexmoe */
-.twikoo .tk-submit {
-    background: var(--color-primary) !important;
-    border-color: var(--color-primary) !important;
-}
-
-.twikoo .tk-submit:hover {
-    background: var(--color2) !important;
-    border-color: var(--color2) !important;
-}
-
-/* 评论框样式 */
-.twikoo .tk-input {
-    border: 2px solid rgba(34, 217, 223, 0.2) !important;
-    border-radius: 12px !important;
-    transition: all 0.3s ease !important;
-}
-
-.twikoo .tk-input:focus {
-    border-color: var(--color-primary) !important;
-    box-shadow: 0 0 0 3px rgba(34, 217, 223, 0.1) !important;
-}
-
-/* 评论列表样式 */
-.twikoo .tk-comment {
-    border-radius: 12px !important;
-    margin-bottom: 15px !important;
-    background: rgba(255, 255, 255, 0.8) !important;
-}
-
-/* 响应式优化 */
-@media (max-width: 768px) {
-    #tcomment {
-        margin: 20px 0;
-        padding: 15px;
-        border-radius: 10px;
-    }
-}
-
-/* 暗色主题适配 */
-@media (prefers-color-scheme: dark) {
-    #tcomment {
-        background: var(--color-card);
-        color: var(--color-text-1);
-    }
-    
-    .twikoo .tk-comment {
-        background: rgba(43, 43, 43, 0.8) !important;
-        color: var(--color-text-1) !important;
-    }
-}
-
-/* 评论区标题样式 */
-.comment-title {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--color-primary-bg);
-}
-
-.comment-title::before {
-    content: "💬 ";
-    margin-right: 8px;
 }

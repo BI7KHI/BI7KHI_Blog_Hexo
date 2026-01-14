@@ -228,20 +228,13 @@ slotFooter: |
                          document.querySelector('.nexmoe-post') || 
                          document.querySelector('.post-content') ||
                          document.querySelector('main');
-          
-          if (article) {
-            // 创建评论区标题
-            const commentTitle = document.createElement('div');
-            commentTitle.className = 'comment-title';
-            commentTitle.innerHTML = '💬 评论区';
-            
+              if (article) {
             // 创建评论容器
             talkContainer = document.createElement('div');
             talkContainer.id = 'tcomment';
             
             // 插入到文章内容后面
-            article.insertAdjacentElement('afterend', commentTitle);
-            commentTitle.insertAdjacentElement('afterend', talkContainer);
+            article.insertAdjacentElement('afterend', talkContainer);
           }
         }
         
