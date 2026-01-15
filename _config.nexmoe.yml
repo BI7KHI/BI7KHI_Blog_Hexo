@@ -109,7 +109,7 @@ widgets:
     - name: recent_posts # 最近的推文
       enable: false
     - name: friends
-      enable: true
+      enable: false
       options:
         friends:
             Hongliu的小站:
@@ -127,11 +127,25 @@ widgets:
             YuanRetro:
                 - https://yuanshen.dev/
                 - https://ts4.tc.mm.bing.net/th/id/OIP-C.uXs0b0qPzfy2kKFCwiPHswAAAA?w=108&h=108&c=1&bgcl=1d7f01&r=0&o=7&dpr=1.7&pid=ImgRC&rm=3
-                - yuanshen.dev
+                - yuanshen.dev            
             Kyunana的栈:
                 - https://kyunana.art/
                 - https://www.kyunana.art/images/avatar.jpg
                 - kyunana.art
+    - name: beian # 备案号显示组件
+      enable: true
+      options:
+        beian:
+          icp: "粤ICP备2025445469号" # ICP备案号，请替换为实际备案号
+          police: # 公安备案信息
+            number: "萌ICP备20260045号" # 公安备案号，请替换为实际备案号
+            url: "https://icp.gov.moe/?keyword=20260045" # 公安备案查询链接
+            icon: false # 是否显示公安备案图标，false则不显示
+          custom: # 自定义备案信息（可选）
+            - text: "网站内容遵循CC BY-NC-SA 4.0协议"
+              url: "" # 可选，不填则不显示为链接
+            # - text: "其他认证信息"
+            #   url: "https://example.com"
             
 # 页脚信息
 footer:
