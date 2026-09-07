@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(npx hexo *)"
+    ]
+  }
+}
