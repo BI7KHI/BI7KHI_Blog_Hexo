@@ -6,9 +6,14 @@ date: 2026-09-07 23:49:11
 categories: 技术
 cover: /images/AndroidStudio/cover.png
 ---
+
+> 好久没写博客了
+
+---
+
 > 适用场景：Ubuntu 主机 + Android Studio 自带 SDK 的 Android 模拟器（Emulator）启动后闪退、无响应或被自动关闭，日志出现 `Emulator terminated with exit code 139`。
 >
-> 本文完整记录一次真实故障的排查、修复、持久化方法，以及把 Android Studio 加入系统 PATH 的配置方法。
+> 本文完整记录一次真实故障的排查、修复、持久化方法，以及把 Android Studio 加入系统 PATH 的配置方法
 
 ---
 
